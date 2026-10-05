@@ -1,20 +1,21 @@
 import { NavLink, Outlet } from "react-router-dom"
 
-
 const MainLayout = () => {
   return (
     <div className="app">
-        <header className="header">
-            <NavLink to='/'>Главная</NavLink>
-            <NavLink to='/products'>Каталог</NavLink>
-            <NavLink to='/about'>О нас</NavLink>
-        </header>
+            <header className="header">
+        <NavLink to='/'>Главная</NavLink>
+        <NavLink to='/users'>Пользователи</NavLink>
+        <NavLink to='/about'>О нас</NavLink>
+        <NavLink to='/products'>Продукты</NavLink>
+      </header>
 
-        <main>
-            <Outlet />
-        </main>
 
-        <footer>2026 Geeks Shop</footer>
+      <main>
+        <Outlet />
+      </main>
+
+      <footer>2026 Geeks Shop</footer>
     </div>
   )
 }
